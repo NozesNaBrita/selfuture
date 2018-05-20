@@ -19,8 +19,8 @@ db:
 install:
 	pip install -U -r requirements.txt
 
-install-test:
-	pip install -U -r requirements.test.txt
+install-local:
+	pip install -U -r requirements/local.txt
 
 start: clean
 	DJANGO_SETTINGS_MODULE=bigfuture.settings.base ./manage.py runserver 9000
